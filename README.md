@@ -21,4 +21,4 @@ python -m autogen_chat.main
 
 ```sh
 python -m pytest -p no:warnings --cov-report term-missing --cov=autogen_chat tests
-```%
+```

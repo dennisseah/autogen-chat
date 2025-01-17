@@ -25,7 +25,7 @@ container = Container()
 
 @dependency_definition(container, singleton=True)
 def logger() -> logging.Logger:
-    logging.basicConfig(level=os.getenv("LOG_LEVEL", "ERROR"))
+    logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"))
     logging.Formatter(fmt=" %(name)s :: %(levelname)-8s :: %(message)s")
     return logging.getLogger("autogen_chat")
 
